@@ -1,0 +1,34 @@
+/* Gaya tambahan untuk menu overlay mobile */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Background gelap transparan */
+  z-index: 40; /* Di atas konten lain */
+  display: none; /* Awalnya tersembunyi */
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Sembunyikan di luar layar */
+  width: 60%; /* Mengurangi lebar menu menjadi 60% */
+  height: 100%;
+  background-color: white;
+  z-index: 50; /* Di atas overlay */
+  transition: right 0.3s ease-in-out; /* Animasi geser */
+  padding: 2.5rem 1.5rem;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* --- Penyesuaian di sini untuk sudut membulat yang lebih besar dan tidak terlalu lebar --- */
+  border-bottom-left-radius: 100px; /* Sudut kiri bawah lebih membulat */
+  border-top-left-radius: 100px; /* Sudut kiri atas lebih membulat */
+}
+
+.mobile-menu.open {
+  right: 0; /* Tampilkan menu */
+}
