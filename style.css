@@ -14,7 +14,7 @@
   position: fixed;
   top: 0;
   right: -100%; /* Sembunyikan di luar layar */
-  width: 60%; /* Mengurangi lebar menu menjadi 60% */
+  width: 60%; /* Lebar menu */
   height: 100%;
   background-color: white;
   z-index: 50; /* Di atas overlay */
@@ -24,11 +24,74 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  /* --- Penyesuaian di sini untuk sudut membulat yang lebih besar dan tidak terlalu lebar --- */
+  /* --- Penyesuaian untuk sudut membulat yang lebih besar dan tidak terlalu lebar --- */
   border-bottom-left-radius: 100px; /* Sudut kiri bawah lebih membulat */
   border-top-left-radius: 100px; /* Sudut kiri atas lebih membulat */
 }
 
 .mobile-menu.open {
   right: 0; /* Tampilkan menu */
+}
+
+/* --- Animasi Mencolok dan Membuat Lebih Hidup --- */
+
+/* Animasi berkedip untuk tombol Shop Now */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.98); /* Sedikit efek "tekan" */
+  }
+}
+
+.animate-blink {
+  animation: blink 1.8s infinite alternate ease-in-out;
+}
+
+/* Animasi slide-in untuk elemen yang masuk ke viewport */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Kelas dasar untuk elemen yang akan dianimasikan saat scroll */
+.animated-item {
+  opacity: 0; /* Awalnya tersembunyi */
+  transform: translateY(20px); /* Awalnya sedikit di bawah */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transisi halus */
+}
+
+.animated-item.is-visible {
+  animation: fadeInSlideUp 0.8s ease-out forwards;
+}
+
+/* Efek hover yang lebih hidup pada gambar produk */
+/* Perubahan di sini untuk konsistensi */
+.transform.transition-transform.duration-300.hover\:scale-105.hover\:shadow-lg:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Bayangan sedikit lebih kuat */
+}
+
+/* Efek Parallax sederhana pada Hero Banner */
+.hero-banner {
+  background-attachment: scroll; /* Default */
+}
+
+@media (min-width: 768px) { /* Aktifkan parallax di layar desktop/tablet */
+  .hero-banner {
+    background-attachment: fixed; /* Memungkinkan efek parallax */
+  }
+}
+
+/* Smooth Scroll Behaviour (opsional, bisa juga di JS) */
+html {
+  scroll-behavior: smooth;
 }

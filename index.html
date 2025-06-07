@@ -11,14 +11,26 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
-    <title>Galileo Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <title>Khoirulanamid - Setiap Langkah, Penuh Gaya</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <meta name="description" content="Temukan koleksi sepatu terbaik di Khoirulanamid. Kualitas, gaya, dan kenyamanan di setiap langkah Anda." />
+    <meta name="keywords" content="sepatu, fashion, pria, wanita, anak, brand, diskon, terbaru, Khoirulanamid, nike, air max" />
+    <meta property="og:title" content="Khoirulanamid - Setiap Langkah, Penuh Gaya" />
+    <meta property="og:description" content="Temukan koleksi sepatu terbaik di Khoirulanamid. Kualitas, gaya, dan kenyamanan di setiap langkah Anda." />
+    <meta property="og:image" content="https://cdn.usegalileo.ai/sdxl10/b2d4d851-cb2a-4692-b8ac-06ad6680ded5.png" />
+    <meta property="og:url" content="URL_HALAMAN_ANDA_DI_SINI" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="stylesheet" href="style.css" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
-  <body>
+  <body id="top">
+    <div id="preloader" class="fixed inset-0 bg-white flex items-center justify-center z-50">
+        <div class="w-16 h-16 border-4 border-blue-500 border-solid rounded-full animate-spin border-t-transparent"></div>
+    </div>
+
     <div
       class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
       style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'
@@ -27,7 +39,7 @@
         <header
           class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f0f4] px-4 sm:px-6 md:px-10 py-3 sticky top-0 bg-white z-30 shadow-md"
         >
-          <div class="flex items-center gap-4 text-[#111118]">
+          <a href="#top" class="flex items-center gap-4 text-[#111118] hover:opacity-80 transition-opacity duration-200 smooth-scroll">
             <div class="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -38,30 +50,34 @@
                 ></path>
               </svg>
             </div>
-            <h2 class="text-[#111118] text-lg font-bold leading-tight tracking-[-0.015em]">Stride</h2>
-          </div>
+            <h2 class="text-[#111118] text-lg font-bold leading-tight tracking-[-0.015em]">Khoirulanamid</h2>
+          </a>
           <div class="flex flex-1 justify-end gap-4 sm:gap-8">
             <div class="hidden md:flex items-center gap-9">
-              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200" href="#">Women</a>
-              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200" href="#">Men</a>
-              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200" href="#">Kids</a>
-              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200" href="#">Brands</a>
-              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200" href="#">Sale</a>
+              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#wanita">Wanita</a>
+              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#pria">Pria</a>
+              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#anak">Anak-Anak</a>
+              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#merek">Merek</a>
+              <a class="text-[#111118] text-sm font-medium leading-normal hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#diskon">Diskon</a>
             </div>
             <div class="flex gap-2 items-center">
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#f0f0f4] text-[#111118] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-[#e0e0e4] transition-colors duration-200"
-              >
-                <div class="text-[#111118]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+              <div class="relative flex flex-1 md:flex-none max-w-[480px] rounded-full overflow-hidden">
+                <input
+                  type="text"
+                  placeholder="Cari produk..."
+                  class="w-full h-10 px-4 pr-10 text-sm font-medium bg-[#f0f0f4] text-[#111118] focus:outline-none focus:bg-[#e0e0e4] focus-visible:ring-2 focus-visible:ring-[#1919e6] focus-visible:ring-offset-2"
+                />
+                <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
                     <path
                       d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
                     ></path>
                   </svg>
                 </div>
-              </button>
+              </div>
               <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#f0f0f4] text-[#111118] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-[#e0e0e4] transition-colors duration-200"
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#f0f0f4] text-[#111118] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-[#e0e0e4] transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-[#1919e6] focus-visible:ring-offset-2"
+                title="Akun Saya"
               >
                 <div class="text-[#111118]" data-icon="User" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
@@ -72,7 +88,8 @@
                 </div>
               </button>
               <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#f0f0f4] text-[#111118] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-[#e0e0e4] transition-colors duration-200"
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#f0f0f4] text-[#111118] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-[#e0e0e4] transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-[#1919e6] focus-visible:ring-offset-2"
+                title="Keranjang Belanja"
               >
                 <div class="text-[#111118]" data-icon="ShoppingCart" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
@@ -82,7 +99,8 @@
                   </svg>
                 </div>
               </button>
-              <button id="hamburger-menu" class="md:hidden flex items-center justify-center size-10 rounded-full bg-[#f0f0f4] text-[#111118] hover:bg-[#e0e0e4] transition-colors duration-200">
+              <button id="hamburger-menu" class="md:hidden flex items-center justify-center size-10 rounded-full bg-[#f0f0f4] text-[#111118] hover:bg-[#e0e0e4] transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-[#1919e6] focus-visible:ring-offset-2"
+                title="Buka Menu">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24px"
@@ -101,87 +119,114 @@
 
         <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
         <div id="mobile-menu" class="mobile-menu">
-          <button id="close-menu" class="absolute top-4 right-4 text-[#111118] size-8 flex items-center justify-center rounded-full hover:bg-[#f0f0f4] transition-colors duration-200">
+          <button id="close-menu" class="absolute top-4 right-4 text-[#111118] size-8 flex items-center justify-center rounded-full hover:bg-[#f0f0f4] transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-[#1919e6] focus-visible:ring-offset-2"
+            title="Tutup Menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66a8,8,0,0,1,11.32-11.32L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
           </button>
-          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200" href="#">Women</a>
-          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200" href="#">Men</a>
-          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200" href="#">Kids</a>
-          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200" href="#">Brands</a>
-          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200" href="#">Sale</a>
+          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#wanita">Wanita</a>
+          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#pria">Pria</a>
+          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#anak">Anak-Anak</a>
+          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#merek">Merek</a>
+          <a class="text-[#111118] text-lg font-medium leading-normal py-2 hover:text-[#1919e6] transition-colors duration-200 smooth-scroll" href="#diskon">Diskon</a>
         </div>
-        <div class="px-4 sm:px-10 md:px-40 flex flex-1 justify-center py-5">
+        <div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="@container">
               <div class="@[480px]:p-4">
                 <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  class="hero-banner flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
                   style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/b2d4d851-cb2a-4692-b8ac-06ad6680ded5.png");'
                 >
                   <div class="flex flex-col gap-2 text-left">
                     <h1
                       class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                     >
-                      Stride - Every Step, Stylishly Yours
+                      Stride - Setiap Langkah, Penuh Gaya
                     </h1>
                     <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      The Nike Air Max 270 React mashes up artistic style with nonstop cushioning. The colors and textures honor art movements over the last century. Classic Max
-                      Air also provides unbeatable comfort.
+                      Nike Air Max 270 React memadukan gaya artistik dengan bantalan tanpa henti. Warna dan teksturnya menghormati gerakan seni sepanjang abad terakhir. Max Air Klasik juga memberikan kenyamanan tak tertandingi.
                     </h2>
                   </div>
                   <div class="flex-wrap gap-3 flex">
                     <button
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1919e6] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-[#1515c0] transition-colors duration-200 shadow-md hover:shadow-lg"
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1919e6] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-[#1515c0] transition-colors duration-200 shadow-md hover:shadow-lg animate-blink focus-visible:ring-2 focus-visible:ring-[#1919e6] focus-visible:ring-offset-2"
                     >
-                      <span class="truncate">Shop Women</span>
+                      <span class="truncate">Belanja Koleksi Wanita</span>
                     </button>
                     <button
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f0f0f4] text-[#111118] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-[#e0e0e4] transition-colors duration-200 shadow-md hover:shadow-lg"
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f0f0f4] text-[#111118] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-[#e0e0e4] transition-colors duration-200 shadow-md hover:shadow-lg focus-visible:ring-2 focus-visible:ring-[#1919e6] focus-visible:ring-offset-2"
                     >
-                      <span class="truncate">Shop Men</span>
+                      <span class="truncate">Belanja Koleksi Pria</span>
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <h2 class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Trending</h2>
+
+            <div class="why-choose-us py-10 px-4 text-center bg-white mt-10">
+                <h3 class="text-[#111118] text-[28px] font-bold mb-8">Mengapa Memilih Kami?</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[960px] mx-auto">
+                    <div class="flex flex-col items-center gap-3 animated-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="#1919e6" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                        <p class="text-[#111118] text-lg font-bold">Produk Berkualitas Tinggi</p>
+                        <p class="text-[#555555] text-sm leading-normal">Kami hanya menyediakan produk dengan kualitas terbaik.</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 animated-item" style="animation-delay: 0.1s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="#1919e6" viewBox="0 0 256 256"><path d="M224,96H178.68l-38.64-64.4A16,16,0,0,0,128,24H100a16,16,0,0,0-15.36,10.6L48,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V112A16,16,0,0,0,224,96ZM128,40.17,149.36,75.92a8,8,0,0,0,6.86,4.08H200a8,8,0,0,1,8,8v16H48V88a8,8,0,0,1,8-8H115.78a8,8,0,0,0,6.86-4.08ZM208,200H48V112H208V200Zm-64-64a8,8,0,0,1-8,8H120a8,8,0,0,1,0-16h4a8,8,0,0,1,8,8Zm-40,0a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h4a8,8,0,0,1,8,8Zm64,0a8,8,0,0,1-8,8h-4a8,8,0,0,1,0-16h4a8,8,0,0,1,8,8Z"></path></svg>
+                        <p class="text-[#111118] text-lg font-bold">Pengiriman Cepat & Aman</p>
+                        <p class="text-[#555555] text-sm leading-normal">Pesanan Anda akan tiba dalam waktu singkat dengan aman.</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 animated-item" style="animation-delay: 0.2s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="#1919e6" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM128,216a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm-8-96h16a8,8,0,0,0,0-16H120a8,8,0,0,0-8,8v40a8,8,0,0,0,8,8h16a8,8,0,0,0,0-16h-8V120Z"></path></svg>
+                        <p class="text-[#111118] text-lg font-bold">Dukungan Pelanggan 24/7</p>
+                        <p class="text-[#555555] text-sm leading-normal">Tim kami selalu siap membantu kebutuhan Anda.</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 animated-item" style="animation-delay: 0.3s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="#1919e6" viewBox="0 0 256 256"><path d="M224,72H32a8,8,0,0,0-8,8V184a8,8,0,0,0,8,8H224a8,8,0,0,0,8-8V80A8,8,0,0,0,224,72Zm-8,104H40V88H216v88ZM112,144a16,16,0,1,1-16-16A16,16,0,0,1,112,144Zm-8-48a16,16,0,1,1-16-16A16,16,0,0,1,104,96Zm88,0a16,16,0,1,1-16-16A16,16,0,0,1,192,96Zm-8,48a16,16,0,1,1-16-16A16,16,0,0,1,184,144Z"></path></svg>
+                        <p class="text-[#111118] text-lg font-bold">Garansi & Pengembalian Mudah</p>
+                        <p class="text-[#555555] text-sm leading-normal">Kepuasan Anda prioritas kami, dengan garansi uang kembali.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5" id="trending-section">Sedang Tren</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/88f201d9-e793-4fe5-86c7-a8cc88091b2a.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 2090</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/a5be00d3-c394-445f-b6c4-c07b1a670908.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 270</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/af0ce88b-b034-407f-b15f-0e078f3d9ed8.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 98</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/dc437bb9-bd80-4e94-8622-1a8f801e704b.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 90</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/af0ce88b-b034-407f-b15f-0e078f3d9ed8.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 95</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/220ef4ad-6721-4feb-b78d-2bf0afa2fc40.png");'
@@ -189,44 +234,44 @@
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air VaporMax</p>
               </div>
             </div>
-            <h2 class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">New Arrivals</h2>
+            <h2 class="text-[#111118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5" id="new-arrivals-section">Produk Terbaru</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/dc437bb9-bd80-4e94-8622-1a8f801e704b.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 2090</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/23aa2c83-20a0-4586-b41f-7a0cd8b08e4e.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 270</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/183d35d5-1988-4120-940a-2d662569fcf0.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 98</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/42d42882-ed96-4275-addf-280e6bbf43cf.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 90</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/400fe5cc-3a35-41a2-a9f6-b15cbad61b7f.png");'
                 ></div>
                 <p class="text-[#111118] text-base font-medium leading-normal">Nike Air Max 95</p>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 animated-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   style='background-image: url("https://cdn.usegalileo.ai/sdxl10/0fed1ba7-ee06-4663-bd64-c4d7eb04a709.png");'
@@ -244,61 +289,103 @@
                     <h1
                       class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                     >
-                      Stride - Every Step, Stylishly Yours
+                      Stride - Setiap Langkah, Penuh Gaya
                     </h1>
                     <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      The Nike Air Max 270 React mashes up artistic style with nonstop cushioning. The colors and textures honor art movements over the last century. Classic Max
-                      Air also provides unbeatable comfort.
+                      Nike Air Max 270 React memadukan gaya artistik dengan bantalan tanpa henti. Warna dan teksturnya menghormati gerakan seni sepanjang abad terakhir. Max Air Klasik juga memberikan kenyamanan tak tertandingi.
                     </h2>
                   </div>
                   <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1919e6] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-[#1515c0] transition-colors duration-200 shadow-md hover:shadow-lg"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1919e6] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-[#1515c0] transition-colors duration-200 shadow-md hover:shadow-lg animate-blink focus-visible:ring-2 focus-visible:ring-[#1919e6] focus-visible:ring-offset-2"
                   >
-                    <span class="truncate">Shop Now</span>
+                    <span class="truncate">Belanja Sekarang</span>
                   </button>
                 </div>
               </div>
             </div>
 
-            ---
-
-            <div class="social-media-section py-8 px-4 text-center bg-[#f8f8fa] mt-10">
-              <h3 class="text-[#111118] text-xl font-bold mb-6">Connect with Stride</h3>
-              <div class="flex justify-center gap-6">
-                <a href="#" class="text-[#111118] hover:text-[#1919e6] transition-colors duration-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,155.5V128h24.84a4,4,0,0,0,4-3.62l.55-27.53a4,4,0,0,0-4-4.35H136V73.3a12.44,12.44,0,0,1,12.67-13.3h14.77a4,4,0,0,0,4-4V38a4,4,0,0,0-4-4H147.28c-28.71,0-47.28,17.29-47.28,48.24V92H79.62a4,4,0,0,0-4,4V124a4,4,0,0,0,4,4H100v51.5a4,4,0,0,0,8,0Z"
-                    ></path>
-                  </svg>
-                </a>
-                <a href="#" class="text-[#111118] hover:text-[#1919e6] transition-colors duration-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56,56,0,0,0,24,80v96a56,56,0,0,0,56,56h96a56,56,0,0,0,56-56V80A56,56,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
-                    ></path>
-                  </svg>
-                </a>
-                <a href="#" class="text-[#111118] hover:text-[#1919e6] transition-colors duration-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M216,72v80a8,8,0,0,1-8,8H136a8,8,0,0,1-8-8V88a8,8,0,0,1,8-8h56a8,8,0,0,0,8-8V56a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8h72a8,8,0,0,0,8-8V152a8,8,0,0,1,8-8h80a8,8,0,0,1,8,8v48a8,8,0,0,0,8,8h24a8,8,0,0,0,8-8V88A16,16,0,0,0,216,72Z"
-                    ></path>
-                  </svg>
-                </a>
-                <a href="#" class="text-[#111118] hover:text-[#1919e6] transition-colors duration-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M245.66,77.66l-29.32-29.32a8,8,0,0,0-11.31,0L172.69,79,150.34,56.69a8,8,0,0,0-11.31,0L109.73,85.93,101.37,77.57a8,8,0,0,0-11.31,0L60.74,106.89,31.4,77.55a8,8,0,0,0-11.31,0L.34,97.31a8,8,0,0,0,0,11.32l29.32,29.32,46.66,46.66L105.65,224H216a8,8,0,0,0,8-8V85.65A8,8,0,0,0,245.66,77.66ZM208,208H113.34L79.69,174.34,32.34,127,127,32.34,161,66.34,188.66,38.68A40,40,0,0,1,232,80Z"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
+            <div class="customer-testimonials py-12 px-4 text-center bg-[#f0f0f4] mt-10">
+                <h3 class="text-[#111118] text-[28px] font-bold mb-8">Apa Kata Pelanggan Kami?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[960px] mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md animated-item">
+                        <p class="text-[#111118] text-base italic mb-4">"Sepatu ini sangat nyaman dan stylish! Sempurna untuk aktivitas sehari-hari."</p>
+                        <p class="text-[#111118] font-medium">- Jane Doe</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md animated-item" style="animation-delay: 0.1s;">
+                        <p class="text-[#111118] text-base italic mb-4">"Pengiriman cepat dan kualitas produknya luar biasa. Pasti akan belanja lagi di sini!"</p>
+                        <p class="text-[#111118] font-medium">- John Smith</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md animated-item" style="animation-delay: 0.2s;">
+                        <p class="text-[#111118] text-base italic mb-4">"Desainnya modern, dan saya mendapat banyak pujian saat memakainya. Sangat direkomendasikan."</p>
+                        <p class="text-[#111118] font-medium">- Sarah Lee</p>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            </div>
         </div>
       </div>
+
+      <div class="fixed bottom-0 left-0 w-full bg-[#1919e6] p-4 text-center md:hidden z-40 shadow-lg">
+          <a href="#new-arrivals-section" class="inline-flex items-center justify-center rounded-full h-10 px-5 bg-white text-[#1919e6] text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-100 transition-colors duration-200 w-full animate-blink smooth-scroll">
+              <span class="truncate">Lihat Koleksi Terbaru!</span>
+          </a>
+      </div>
+
+      <footer class="bg-[#111118] text-white py-10 px-4 sm:px-6 md:px-10 mt-10">
+          <div class="max-w-[960px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div>
+                  <h4 class="font-bold text-lg mb-4">Khoirulanamid</h4>
+                  <p class="text-sm leading-normal text-gray-300">Temukan langkah sempurna Anda. Kualitas, gaya, dan kenyamanan di setiap jejak.</p>
+              </div>
+              <div>
+                  <h4 class="font-bold text-lg mb-4">Navigasi Cepat</h4>
+                  <ul>
+                      <li class="mb-2"><a href="#wanita" class="text-sm text-gray-300 hover:text-white transition-colors duration-200 smooth-scroll">Wanita</a></li>
+                      <li class="mb-2"><a href="#pria" class="text-sm text-gray-300 hover:text-white transition-colors duration-200 smooth-scroll">Pria</a></li>
+                      <li class="mb-2"><a href="#anak" class="text-sm text-gray-300 hover:text-white transition-colors duration-200 smooth-scroll">Anak-Anak</a></li>
+                      <li class="mb-2"><a href="#merek" class="text-sm text-gray-300 hover:text-white transition-colors duration-200 smooth-scroll">Merek</a></li>
+                      <li class="mb-2"><a href="#diskon" class="text-sm text-gray-300 hover:text-white transition-colors duration-200 smooth-scroll">Diskon</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="font-bold text-lg mb-4">Dukungan</h4>
+                  <ul>
+                      <li class="mb-2"><a href="#" class="text-sm text-gray-300 hover:text-white transition-colors duration-200">FAQ</a></li>
+                      <li class="mb-2"><a href="#" class="text-sm text-gray-300 hover:text-white transition-colors duration-200">Kebijakan Pengembalian</a></li>
+                      <li class="mb-2"><a href="#" class="text-sm text-gray-300 hover:text-white transition-colors duration-200">Kebijakan Privasi</a></li>
+                      <li class="mb-2"><a href="#" class="text-sm text-gray-300 hover:text-white transition-colors duration-200">Hubungi Kami</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="font-bold text-lg mb-4">Ikuti Kami</h4>
+                  <div class="flex gap-4">
+                      <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200" title="Facebook">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,155.5V128h24.84a4,4,0,0,0,4-3.62l.55-27.53a4,4,0,0,0-4-4.35H136V73.3a12.44,12.44,0,0,1,12.67-13.3h14.77a4,4,0,0,0,4-4V38a4,4,0,0,0-4-4H147.28c-28.71,0-47.28,17.29-47.28,48.24V92H79.62a4,4,0,0,0-4,4V124a4,4,0,0,0,4,4H100v51.5a4,4,0,0,0,8,0Z"></path></svg>
+                      </a>
+                      <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200" title="Instagram">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56,56,0,0,0,24,80v96a56,56,0,0,0,56,56h96a56,56,0,0,0,56-56V80A56,56,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
+                      </a>
+                      <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200" title="TikTok">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256"><path d="M216,72v80a8,8,0,0,1-8,8H136a8,8,0,0,1-8-8V88a8,8,0,0,1,8-8h56a8,8,0,0,0,8-8V56a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8h72a8,8,0,0,0,8-8V152a8,8,0,0,1,8-8h80a8,8,0,0,1,8,8v48a8,8,0,0,0,8,8h24a8,8,0,0,0,8-8V88A16,16,0,0,0,216,72Z"></path></svg>
+                      </a>
+                      <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200" title="Twitter (X)">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256"><path d="M245.66,77.66l-29.32-29.32a8,8,0,0,0-11.31,0L172.69,79,150.34,56.69a8,8,0,0,0-11.31,0L109.73,85.93,101.37,77.57a8,8,0,0,0-11.31,0L60.74,106.89,31.4,77.55a8,8,0,0,0-11.31,0L.34,97.31a8,8,0,0,0,0,11.32l29.32,29.32,46.66,46.66L105.65,224H216a8,8,0,0,0,8-8V85.65A8,8,0,0,0,245.66,77.66ZM208,208H113.34L79.69,174.34,32.34,127,127,32.34,161,66.34,188.66,38.68A40,40,0,0,1,232,80Z"></path></svg>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-6">
+              &copy; <span id="current-year"></span> Khoirulanamid. Hak cipta dilindungi.
+          </div>
+      </footer>
+
     </div>
+
+    <button id="scroll-to-top" class="fixed bottom-4 right-4 bg-[#1919e6] text-white p-3 rounded-full shadow-lg hover:bg-[#1515c0] transition-all duration-300 hidden z-40"
+      title="Kembali ke Atas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256"><path d="M64,152a8,8,0,0,1,13.66-5.66L128,104l50.34,42.34A8,8,0,0,1,192,152a8,8,0,0,0,5.66-13.66L133.66,90.34a8,8,0,0,0-11.32,0L58.34,138.34A8,8,0,0,0,64,152Z"></path></svg>
+    </button>
 
     <script src="script.js"></script>
   </body>
